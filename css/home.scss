@@ -1,0 +1,25 @@
+.good-moring {
+    font-size: 1.3rem;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+.good-moring-cards {
+    display: grid;
+    grid-template-columns: repeat( 5, 1fr);
+    column-gap: 20px;
+    row-gap: 10px;
+    div {
+        display: flex;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.09);
+        border-radius: 4px;
+    }
+    img {
+        width: 25%;
+    }
+    h5 {
+        margin-left: 5px;
+        float: left;
+        font-size: .7rem;
+    }
+}
