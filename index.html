@@ -13,13 +13,85 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Custome CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  
+    <link rel="stylesheet" href="./css/home.css">
+
+    <!-- <script async src="login_credentals.js"></script> -->
+    <script type="module" async src="./js/spotifyData.js"></script>
+    <script type="module" async src="./js/home.js"></script>
+    <script type="module" async src="./js/showRunner.js"></script>
   </head>
   <body>
+   <div class="container-fluid">
+       <div class="row flex-xl-nowrap">
+           <div class="col-md-2 col-xs-2 sidebar">
+               <img src="assets/images/logo.png" class="logo">
+               <nav class ="navbar ">
+                <ul class ="nav navbar-nav w-100">
+                <li class ="nav-item active">
+                <a class ="nav-link" href="#"><svg viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z" fill="currentColor"></path></svg> Home </a>
+                </li>
+                <li class ="nav-item">
+                <a class ="nav-link" href="#"><svg viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z" fill="currentColor" fill-rule="evenodd"></path></svg> Search </a>
+                </li>
+                <li class ="nav-item mb-2">
+                <a class ="nav-link" href="#"><svg viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z" fill="currentColor"></path></svg> Your Library </a>
+                </li>
+                <li class ="nav-item">
+                  <a class ="nav-link" href="#"><i class="fas fa-plus-square"></i> Create Playlist </a>
+                </li>
+                <li class ="nav-item">
+                  <a class ="nav-link" href="#"><i class="fas fa-heart"></i> Liked Songs </a>
+                </li>
+                </ul>
+                </nav>
+                <hr>
+                <a href="#" class="btn btn-link">Upgrade to Premium</a>
+           </div>
+           <main id="main" class="col-md-10 col-xs-8 main-content">
+            <nav id="nav-top">
+              <div class="arrows">
+                <button data-testid="top-bar-back-button" aria-hidden="true" aria-label="Go back" disabled="" class="_8780d098bf4fa4b72c62f7f4c869e817-scss fcae410939337be1f28cb50fe3d0dcb3-scss" title="Go back"><svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" class="Svg-sc-1usfroi-0 kcaoHR _6fe5d5efc9b4a07d5c424071ac7cdacb-scss"><polyline points="16 4 7 12 16 20" fill="none" stroke="#dddddd"></polyline></svg></button>
+                <button data-testid="top-bar-forward-button" aria-hidden="true" aria-label="Go forward" disabled="" class="_8780d098bf4fa4b72c62f7f4c869e817-scss e228f25654282e1c84018873fefaa148-scss" title="Go forward"><svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" class="Svg-sc-1usfroi-0 kcaoHR _6fe5d5efc9b4a07d5c424071ac7cdacb-scss"><polyline points="8 4 17 12 8 20" fill="none" stroke="#dddddd"></polyline></svg></button>
+              </div>
+              <div id="login">
+                <div class="dropdown rounded login text-white">
+                  <a class="btn dropdown-toggle text-white font-weight-bolder" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="https://i.scdn.co/image/ab67706f0000000218e20d8d2bc7aa007d305e57" alt="...">
+                    Dropdown link
+                  </a>
+                
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </div>
+              </div>
+            </nav>
+            <section id="good-morning">
+              <h2>Good morning</h2>
+              <div class="good-morning-cards" >
+              </div>
+            </section>
 
-       
+            <section id="recently-played">
+              <h3>Recently played</h3>
+              <div class="recently-played-cards" >
+              </div>
+            </section>
 
-        <section class="sportifyfooter spotify-black">
+            <section id="show-to-try">
+              <h3>Shows to try</h3>
+              <div class="show-to-try recently-played-cards" >
+              </div>
+            </section>
+
+           </main>
+       </div>
+   </div>
+  </section>
+ <section class="sportifyfooter spotify-black">
           <div class="firstcol firstblock">
               <img src="./ Foot Image.png" alt="" class="footerImage">
               <div>
@@ -60,20 +132,6 @@
               <i class="fas fa-expand-alt fa-xs settings-buttons settings-btn-expanded"></i>
           </div>
       </section>
-            
-
-
-
-
-
-
-      
-
-       
-   
-    
-    
-   
     
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
