@@ -1,18 +1,9 @@
-import { spotifyData } from './spotifyData.js'
+const displayCards = ( selector, spotifyData, card) => {
 
-const goodMorningCards = document.querySelector(".good-moring-cards")
+    const htmlEl = document.querySelector( selector )
+    htmlEl.innerHTML = ""
 
-goodMorningCards.innerHTML =""
+    spotifyData.forEach( spotify => htmlEl.innerHTML += card( spotify ))
+}
 
-spotifyData.forEach ( spotify => {
-
-    const { img, title } = spotify
-
-    goodMorningCards.innerHTML 
-        +=`
-            <div ">
-                <img src=${ img } alt="...">
-                <h5 class="card-title"> ${ title } </h5>
-            </div>
-        `
-})
+export default displayCards
