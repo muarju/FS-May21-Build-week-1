@@ -2,8 +2,7 @@
     --primary-color:#1DB954;
     --primary-black:#191414;
     --primary-red-black-gradiant:#191414;
-	  --background-noise:url(../images/background-noise.svg)
-    --primary-red-black-gradiant:#191414;
+	--background-noise:url(../images/background-noise.svg)
 }
 
 /* 
@@ -102,18 +101,16 @@ Importing fonts
 Style
 */
 body{
-    background-color: var(--primary-black);
-    color: #b3b3b3;
-    font-family: spotify-circular,spotify-circular-cyrillic,spotify-circular-arabic,spotify-circular-hebrew,Helvetica Neue,helvetica,arial,Hiragino Kaku Gothic Pro,Meiryo,MS Gothic,sans-serif;
+font-family: spotify-circular,spotify-circular-cyrillic,spotify-circular-arabic,spotify-circular-hebrew,Helvetica Neue,helvetica,arial,Hiragino Kaku Gothic Pro,Meiryo,MS Gothic,sans-serif;
 }
 #main-content-home{
+	background: rgb(66,5,0);
 	background: linear-gradient(180deg, rgba(66,5,0,1) 0%, rgba(11,11,11,1) 32%);
 	color: #b3b3b3;
 }
 #main-content-album{
+	background-color: rgb(168, 56, 136);
 	color: #b3b3b3;
-	background: rgb(66,5,0);
-	background: linear-gradient(180deg, rgba(66,5,0,1) 0%, rgba(11,11,11,1) 32%);
 }
 a{text-decoration: none;
 color: white;}
