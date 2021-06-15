@@ -98,33 +98,13 @@ Importing fonts
 /*
 Style
 */
-body{
-    background-color: var(--primary-black);
-    color: white;
-}
+
 .logo{
     max-height: 40px;
     margin-top: 20px;
     margin-left: 20px;
 }
-.sidebar{
-    background-color: black;
-    min-height: 100vh;
-}
-.container-fluid{
-	padding-left: 0px !important;
-	padding-right: 0px !important;
-	height: 7rem !important;
-}
-body{
-    background-color: var(--primary-black);
-    color: white;
-}
-.logo{
-    max-height: 40px;
-    margin-top: 20px;
-    margin-left: 20px;
-}
+
 .sidebar{
     background-color: black;
     min-height: 100vh;
