@@ -68,6 +68,11 @@ h3 {
     }
 }
 
+section { // TODO: this has to be put on the home pages section only
+    
+    margin-bottom: 50px;
+}
+
 .recently-played-cards {
     display: flex ;
     column-gap: 20px;

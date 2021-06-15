@@ -17,7 +17,7 @@ displayCards(".good-morning-cards", goodMorningData, cardGoodMorning )
 
 
 
-//! ------------------------------------< Recently played Section >-------------------------------------------
+
 
 const card = spotify =>`
 <div >
@@ -27,9 +27,20 @@ const card = spotify =>`
 </div>
 ` 
 
+//! ------------------------------------< Recently played Section >-------------------------------------------
+
 displayCards(
 
     ".recently-played-cards" 
     , spotifyDataLarge.filter( spotifyData => spotifyData.tag === "recentlyPlayed" ) 
+    , card
+)
+
+//! ------------------------------------< Shows to try Section >-------------------------------------------
+
+displayCards(
+
+    ".show-to-try" 
+    , spotifyDataLarge.filter( spotifyData => spotifyData.tag === "showToTry" ) 
     , card
 )

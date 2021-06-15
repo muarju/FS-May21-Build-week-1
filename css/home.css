@@ -62,6 +62,10 @@ h3 {
   font-size: 0.7rem;
 }
 
+section {
+  margin-bottom: 50px;
+}
+
 .recently-played-cards {
   display: flex;
   -moz-column-gap: 20px;
