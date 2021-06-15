@@ -11,7 +11,7 @@ const cardGoodMorning = spotify => `
 
 displayCards(
 
-    ".good-morning-cards",
+    ".good-morning-cards"                        ,
     filterData( "goodMorning", spotifyDataLarge ),
     cardGoodMorning 
 ) 
