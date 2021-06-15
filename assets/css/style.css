@@ -99,6 +99,7 @@ Importing fonts
 /*
 Style
 */
+
 body{
 	background: rgb(66,5,0);
 	background: linear-gradient(180deg, rgba(66,5,0,1) 0%, rgba(11,11,11,1) 32%);
@@ -107,15 +108,136 @@ body{
 }
 a{text-decoration: none;
 color: white;}
+
 .logo{
     max-height: 40px;
     margin-top: 20px;
     margin-left: 20px;
 }
+
 .sidebar{
     background-color: black;
     min-height: 100vh;
 }
+
+.spotify-black {
+    background-color: #191414;
+  }
+  .spotify-green {
+    background-color: #1DB954 !important;
+  }
+  .white-fade {
+    color: #c1c1c1;
+  }
+  .grey-fade {
+    color: #919191;
+  }
+  .reader {
+    background-color: #919191;
+  }
+  h6{
+      font-size: 6px !important;
+  }
+  .sportifyfooter {
+    position: fixed;
+    bottom: 0;
+    height: 8.5%;
+    width: 100%;
+    /* background-color: black; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    z-index: 1;
+  }
+  /* =========== CURRENT SECTION ===========  */
+  .footerImage {
+    width: 50px;
+    height: 54px;
+    margin: 15px;
+    padding-left: 2px;
+  }
+  .current-artist {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+  }
+  icon1{
+	color: white !important;
+  }
+    
+  /* =========== PLAYER SECTION =========== */
+  .firstcol,.secondcol, .thirdcol {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+  .firstblock {
+    flex-grow: 2;
+    max-width: 200px;
+  }
+  
+  .setcontent {
+    justify-content: center;
+    flex-flow: column;
+    flex-grow: 4;
+  }
+  .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 76%;
+    width: 100%;
+    transform: scale(0.7);
+  }
+  .style_buttons {
+    margin: 0 9px;
+  
+  }
+  .reading_bar {
+    height: 24%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+  }
+  
+  .sizing_bars {
+    height: 2.8px;
+    width: 50%;
+  }
+  
+  /* =========== SETTINGS ===========  */
+  .settings {
+    flex-grow: 1.2;
+    max-width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .settings-buttons {
+    margin: 0 6px;
+  }
+  
+  .volume {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 130px;
+  }
+  
+  .volume-progress {
+    display: inline-block;
+    width: 100%;
+    padding: 0;
+  }
+  
+  .settings-btn-expanded {
+    position: absolute;
+    float: right;
+    right: 20px;
+  }
 .navbar{
 	padding: .5rem .5rem;
 }
@@ -137,3 +259,4 @@ color: white;}
 	color: whitesmoke;
 	text-decoration: none;
 }
+
