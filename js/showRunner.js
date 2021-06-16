@@ -1,10 +1,5 @@
-import displayCards from './home.js';
 import { spotifyDataLarge } from './data/spotifyDataLarge.js'
-
-
-const goodMorningData = spotifyDataLarge.filter(spotifyData => 
-    spotifyData.tag === "goodMorning"
-)
+import { displayCards, filterData } from './home.js';
 
 //! ------------------------------------< Good Morning Section >-------------------------------------------
 const cardGoodMorning = spotify => `<div class="col">
@@ -22,10 +17,20 @@ const cardGoodMorning = spotify => `<div class="col">
                                     </div>
                                     </div>
                                     `
+
 displayCards(".morning-cards", goodMorningData, cardGoodMorning )
 
 
+displayCards(
+
+    ".good-morning-cards"                        ,
+    filterData( "goodMorning", spotifyDataLarge ),
+    cardGoodMorning 
+) 
+//* END -- Good Morning Section
+//! ------------------------------------< Card for the next sections >-------------------------------------
 const card = spotify =>`
+
 <div class="col">
     <div class="card mb-3">
     <img src=${ spotify.img } alt="...">
@@ -35,22 +40,23 @@ const card = spotify =>`
     </div>
     </div>
 </div>
-` 
+`
 
-//! ------------------------------------< Recently played Section >-------------------------------------------
+//! ------------------------------------< Recently played Section >----------------------------------------
 
 displayCards(
 
-    ".recently-played-cards" 
-    , spotifyDataLarge.filter( spotifyData => spotifyData.tag === "recentlyPlayed" ) 
-    , card
+    ".recently-played-cards"                        ,
+    filterData( "recentlyPlayed", spotifyDataLarge ),
+    card
 )
-
+//* END -- Recently played Section
 //! ------------------------------------< Shows to try Section >-------------------------------------------
-
+    
 displayCards(
 
-    ".show-to-try" 
-    , spotifyDataLarge.filter( spotifyData => spotifyData.tag === "showToTry" ) 
-    , card
+    ".show-to-try" ,
+    filterData( "showToTry", spotifyDataLarge ),
+    card
 )
+//* END -- Shows to try Section
