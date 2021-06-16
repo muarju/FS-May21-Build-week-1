@@ -1,13 +1,5 @@
 const filterData = ( data, dataList ) => dataList.filter( spotifyData => spotifyData.tag === data ) 
 
-
-
-
-
-
-
-
-
 const displayCards = ( selector, spotifyData, card) => {
 
     const htmlEl = document.querySelector( selector )
