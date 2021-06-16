@@ -110,7 +110,7 @@ font-family: spotify-circular,spotify-circular-cyrillic,spotify-circular-arabic,
 	color: #b3b3b3;
 }
 #main-content-album{
-	background-color: rgb(168, 56, 136);
+	background: linear-gradient(181deg, #eb008e, #363636);
 	color: #b3b3b3;
 }
 a{text-decoration: none;
@@ -353,14 +353,13 @@ button svg{
 	margin-left: 15px;
 	margin-right: 15px;
 	margin-top: 20px;
-	color: color: rgb(179, 179, 179);
+	color: rgb(179, 179, 179);
 }
 #album-play table tr td:first-child,th:first-child{
 	width: 5%;
 }
 #album-play table tr td:last-child,th:last-child{
 	width: 10%;
-}
 }
 #album-play table tr th{
 	font-weight: 300;
@@ -387,6 +386,174 @@ button svg{
     line-height: 24px;
     text-transform: none;
 }
+
+/** code for good moring section **/
+.morning-cards .card{
+	background-color: rgba(255, 255, 255, 0.09);
+    box-shadow: 12px 12px 12px 2px #00000055;
+}
+
+#nav-top,#recently-played, #morning, #show-to-try{
+	padding: 0px 32px;
+	margin-bottom: 50px;
+}
+.recently-played-cards .card, .show-to-try .card{
+	background-color: rgba(255, 255, 255, 0.09);
+    box-shadow: 12px 12px 12px 2px #00000055;
+	padding: 16px;
+}
+.recently-played-cards .card-body, .show-to-try .card-body{
+	padding: 5px;
+}
+.recently-played-cards img,.show-to-try img{
+	border-radius: 12px;
+}
+.recently-played-cards .card-title{
+	font-size: 15px;
+	font-weight: 600;
+}
+.spotify-black {
+    background-color: #000000;
+  }
+  .spotify-green {
+    background-color: #1DB954 !important;
+  }
+  .white-fade {
+    color: #c1c1c1;
+  }
+  .grey-fade {
+    color: #919191;
+  }
+  .reader {
+    background-color: #919191;
+  }
+.sportifyfooter {
+    position: fixed;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    border-top: 1px solid #282828;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    z-index: 1;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  /* =========== CURRENT SECTION ===========  */
+  .footerImage {
+    width: 50px;
+    height: 54px;
+    margin: 15px;
+    padding: 8px;
+  }
+  .current-artist {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+  }
+  icon1{
+	color: white !important;
+  }
+    
+  /* =========== PLAYER SECTION =========== */
+  .firstcol,.secondcol, .thirdcol {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+  .firstblock {
+    flex-grow: 2;
+    max-width: 33%;
+  }
+  
+  .setcontent {
+    justify-content: center;
+    flex-flow: column;
+    flex-grow: 4;
+  }
+  .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 76%;
+    width: 100%;
+    transform: scale(0.7);
+  }
+  .style_buttons {
+    margin: 0 9px;
+  
+  }
+  .reading_bar {
+    height: 24%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+  }
+  
+  .sizing_bars {
+    height: 2.8px;
+    width: 50%;
+  }
+  
+  /* =========== SETTINGS ===========  */
+  .settings {
+    flex-grow: 1.2;
+    max-width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .settings-buttons {
+    margin: 0 6px;
+  }
+  
+  .volume {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 130px;
+  }
+  
+  .volume-progress {
+    display: inline-block;
+    width: 100%;
+    padding: 0;
+  }
+  
+  .settings-btn-expanded {
+    position: absolute;
+    float: right;
+    right: 20px;
+  }
+  .player-song-title{
+	font-size: 16px;
+	font-weight: 500;
+	color: white;
+	line-height: 10px;
+	padding-top: 15px;
+  }
+  .player-album-name{
+	font-size: 13px;
+	font-weight: 500;
+	color: white;
+  }
+  svg{
+	fill: #fff;
+  }
+  
+  @media (min-width: 768px){
+	.player-song-title{
+	  line-height: 18px;
+  
+	}
+  }
+
 .player-song-title{
   font-size: 16px;
   font-weight: 500;
