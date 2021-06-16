@@ -17,12 +17,10 @@ The required pages are:
 
 <b>RESOURCES</b>
 <ul>
- <li><a href="https://s3.eu-west-1.amazonaws.com/eduflow-production/activity-resources/958712906322620.png">Login.png</a></li>
- <li><a href="https://s3.eu-west-1.amazonaws.com/eduflow-production/activity-resources/515451676803203.jpg">Homepage.jpg</a></li>
- <li><a href="https://s3.eu-west-1.amazonaws.com/eduflow-production/activity-resources/489475428809912.jpg">Album Page.jpg</a></li>
- <li><a href="https://s3.eu-west-1.amazonaws.com/eduflow-production/activity-resources/96808898646520.jpg">Artist Page.jpg</a></li>
+ <li><a href="https://imgur.com/a/BiO8yx2">Login.png</a></li>
+ <li><a href="https://imgur.com/a/RJdxTOh">Homepage.jpg</a></li>
+ <li><a href="https://imgur.com/a/qQBZuIq">Album Page.jpg</a></li>
+ <li><a href="https://imgur.com/a/pLe9vpg">Artist Page.jpg</a></li>
 </ul>
-
-
 
 <h2>Check Our work <a href="https://muarju.github.io/FS-May21-Build-week-1/" target="_blank">Here</a></h2>
