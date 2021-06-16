@@ -18,12 +18,11 @@ const cardGoodMorning = spotify => `<div class="col">
                                     </div>
                                     `
 
-displayCards(".morning-cards", goodMorningData, cardGoodMorning )
+//displayCards(".morning-cards", goodMorningData, cardGoodMorning )
 
 
 displayCards(
-
-    ".good-morning-cards"                        ,
+    ".morning-cards"                        ,
     filterData( "goodMorning", spotifyDataLarge ),
     cardGoodMorning 
 ) 

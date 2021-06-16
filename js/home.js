@@ -1,13 +1,5 @@
 const filterData = ( data, dataList ) => dataList.filter( spotifyData => spotifyData.tag === data ) 
 
-
-
-
-
-
-
-
-
 const displayCards = ( selector, spotifyData, card) => {
 
     const htmlEl = document.querySelector( selector )
@@ -15,9 +7,5 @@ const displayCards = ( selector, spotifyData, card) => {
 
     spotifyData.forEach( spotify => htmlEl.innerHTML += card( spotify ))
 }
-
-
-
-
 
 export { displayCards, filterData }
