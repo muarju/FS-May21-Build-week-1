@@ -2,14 +2,6 @@
     --loginHeight: 28px;
 }
 
-h2,
-h3 {
-    margin: 30px 0;
-}
-
-h3 {
-    font-size: 1.5rem;
-}
 
 
 #nav-top {
@@ -67,7 +59,29 @@ h3 {
         font-size: .7rem;
     }
 }
-
+@media only screen and (device-width: 768px) {
+    .good-morning-cards {
+        display: grid;
+        grid-template-columns: repeat( 2, 1fr);
+        column-gap: 20px;
+        row-gap: 10px;
+        
+        div {
+            display: flex;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.09);
+            border-radius: 4px;
+            box-shadow: 12px 12px 12px 2px #00000055;
+        }
+        img {
+            width: 25%;
+        }
+        h5 {
+            margin-left: 5px;
+            font-size: .7rem;
+        }
+    }
+ }
 section { // TODO: this has to be put on the home pages section only
     
     margin-bottom: 50px;
