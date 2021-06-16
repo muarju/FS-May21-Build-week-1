@@ -1,8 +1,8 @@
 :root{
     --primary-color:#1DB954;
-    --primary-black:#191414;
+    --primary-black:#000000;
     --primary-red-black-gradiant:#191414;
-	--background-noise:url(../images/background-noise.svg)
+	  --background-noise:url(../images/background-noise.svg)
 }
 
 /* 
@@ -102,6 +102,7 @@ Style
 */
 
 body{
+background: var(--primary-black);
 font-family: spotify-circular,spotify-circular-cyrillic,spotify-circular-arabic,spotify-circular-hebrew,Helvetica Neue,helvetica,arial,Hiragino Kaku Gothic Pro,Meiryo,MS Gothic,sans-serif;
 }
 #main-content-home{
@@ -222,7 +223,7 @@ color: white;}
   /* =========== SETTINGS ===========  */
   .settings {
     flex-grow: 1.2;
-    max-width: 33%
+    max-width: 33%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -280,7 +281,9 @@ color: white;}
 	color: whitesmoke;
 	text-decoration: none;
 }
-
+#album-header{
+  padding-bottom: 30px;
+}
 #album-header img{
 	-webkit-box-shadow: 0 4px 60px rgb(0 0 0 / 50%);
     box-shadow: 0 4px 60px rgb(0 0 0 / 50%);
@@ -317,6 +320,7 @@ span.year::before,span.total-songs::before{
     margin-right: -15px;
 	-webkit-box-shadow: 0 4px 60px rgb(0 0 0 / 50%);
     box-shadow: 0 4px 60px rgb(0 0 0 / 50%);
+    min-height: 200vh;
 }
 .album-play{
 	margin-left: 15px;
@@ -393,7 +397,7 @@ button svg{
     box-shadow: 12px 12px 12px 2px #00000055;
 }
 
-#nav-top,#recently-played, #morning, #show-to-try{
+#nav-top,#recently-played, #morning, #show-to-try,#album-header{
 	padding: 0px 32px;
 	margin-bottom: 50px;
 }
@@ -575,4 +579,159 @@ svg{
     line-height: 18px;
 
   }
+}
+
+
+/** CSS code for Artist page **/
+#artist-header{
+  padding: 30px 32px;
+}
+
+#main-content-artist{
+  background-image: url(../images/artist/artist-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: 50% 15%;
+	color: #b3b3b3;
+  height: 370px;
+}
+
+.artist-bg{
+  background: -webkit-gradient(linear,left top,left bottom,from(transparent),to(rgba(0,0,0,.5))),var(--background-noise);
+  content-visibility: auto;
+  position: absolute;
+  width: 100%;
+}
+
+#artist-header h1{
+  font-size: 96px;
+  line-height: 96px;
+  
+}
+.artist-play{
+  background: linear-gradient(176deg, #787878, black)
+}
+.btn-follow{
+  margin-left: 40px;
+  height: 32px;
+  margin-top: 12px;
+  font-size: 12px;
+  font-weight: 800;
+  color: #d7d7d7;
+  border: 1px solid #d7d7d7;
+}
+.artist-play .btn-dot{
+	color: rgb(221, 221, 221);
+	background: none;
+	border: none;
+	height: 30px; 
+	width: 30px;
+	padding: 15px 0px 15px 20px;
+}
+.artist-details{
+padding: 0px 32px;
+}
+.artist-details h3{
+  padding: 15px 0px;
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -.04em;
+  line-height: 28px;
+  text-transform: none;
+}
+.artist-details #artist-table tr{
+  border: none !important;;
+}
+
+.popular-releases .card{
+  background: transparent;
+  box-shadow: 1px 1px #0000004f;
+}
+.popular-releases img{
+  padding: 15px;
+}
+/* code for login page */
+.login-body{
+  background: white;
+}
+.btn-facebook{
+  background: #4267B2;
+  border-color: #4267B2;
+  text-transform: uppercase;
+  padding: 10px;
+  font-weight: 500;
+}
+.btn-apple{
+  background:black;
+  border-color: black;
+  text-transform: uppercase;
+  padding: 10px;
+  font-weight: 500;
+}
+
+.login-top span::before{
+content: '------------';
+}
+.login-top span::after{
+  content: '------------';
+  }
+
+.divider{
+  border-top: 1px solid #d9dadc;
+  display: block;
+  line-height: 1px;
+  margin: 15px 0;
+  position: relative;
+  text-align: center;
+}
+.divider .divider-title {
+  background: #fff;
+  font-size: 12px;
+  letter-spacing: 1px;
+  padding: 0 20px;
+  text-transform: uppercase;
+}
+
+.login-form label{
+  font-weight: 700;
+}
+.login-form a{
+  color:black
+}
+.login-form{
+  padding-bottom: 10px;
+  border-bottom: 1px solid #0000002b;
+}
+
+.login-footer h5{
+  margin: 35px 0px;
+  font-size: 18px;
+  font-weight: 900;
+}
+.login-footer .btn{
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.login-footer{
+  border-bottom: 1px solid #0000002b;
+}
+.agree-text{
+  font-size: 11px;
+  padding: 15px 0px;
+}
+.agree-text a{
+  color:green
+}
+.aritst-pick-card{
+  background: transparent;
+  border: none;
+}
+.aritst-pick-card p{
+  margin-bottom: 0px;
+}
+.aritst-pick-card .card-body{
+  padding: 5px;
 }
