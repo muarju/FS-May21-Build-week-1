@@ -1,5 +1,5 @@
 import { spotifyDataLarge } from './data/spotifyDataLarge.js'
-import { displayCards, filterData } from './home.js';
+import { displayCards, filterData,songLength } from './home.js';
 
 //! ------------------------------------< Good Morning Section >-------------------------------------------
 const cardGoodMorning = spotify => `<div class="col">
@@ -22,6 +22,7 @@ const cardGoodMorning = spotify => `<div class="col">
 
 
 displayCards(
+
     ".morning-cards"                        ,
     filterData( "goodMorning", spotifyDataLarge ),
     cardGoodMorning 
@@ -59,3 +60,69 @@ displayCards(
     card
 )
 //* END -- Shows to try Section
+
+
+/*Code for artist populer release cards */
+displayCards(
+
+    ".popular-releases" ,
+    filterData( "showToTry", spotifyDataLarge ),
+    card
+)
+//* END -- Shows to try Section
+
+
+/*
+add code for album page
+*/
+
+const albums = (albumList) => {
+
+    const albumTable = document.querySelector("#album-table");
+    albumList.forEach( (albumInfo, i) => {
+        albumTable.innerHTML +=`
+        <tr>
+            <td>${ i+1 }</td>
+            <td>
+                <div class="song-title">${ albumInfo.title }</div>
+                <div class="album-name">${ albumInfo.artist.name }</div>
+            </td>
+            <td>${ songLength( albumInfo.duration ) }</td>
+        </tr>
+        `
+    });
+  };
+
+/* code for artist page */
+const artistData = (albumList) => {
+
+    const albumTable = document.querySelector("#artist-table");
+    albumList.forEach( (albumInfo, i) => {
+        albumTable.innerHTML +=`
+        <tr>
+            <td>${ i+1 }</td>
+            <td>
+                <img src="https://api.deezer.com/artist/412/image" style="height: 40px;float: left;padding-right: 10px;">
+                <div class="song-title">${ albumInfo.title_short }</div>
+            </td>
+            <td>${albumInfo.rank }</td>
+            <td>${ songLength( albumInfo.duration ) }</td>
+        </tr>
+        `
+    });
+  };
+
+  window.onload = function () {
+    fetch("https://striveschool-api.herokuapp.com/api/deezer/search?q=Bohemian Rhapsody (The Original Soundtrack)")
+      .then(response => response.json())
+      .then((data) => data.data)
+      .then(albums)
+      .catch(console.log);
+
+
+      fetch("https://striveschool-api.herokuapp.com/api/deezer/artist/412/top?limit=50")
+      .then(response => response.json())
+      .then((data) => data.data)
+      .then(artistData)
+      .catch(console.log);
+  };
