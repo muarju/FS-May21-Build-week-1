@@ -18,8 +18,8 @@
 
     <!-- <script async src="login_credentals.js"></script> -->
     <script type="module" async src="./js/spotifyData.js"></script>
-    <script type="module" async src="./js/home.js"></script>
-    <script type="module" async src="./js/showRunner.js"></script>
+    <script type="module" async src="./js/functions.js"></script>
+    <script type="module" async src="./js/album.js"></script>
   </head>
   <body>
    <div class="container-fluid">
@@ -73,16 +73,16 @@
             <section id="album-header">
                 <div class="row">
                     <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
-                        <img src="assets/images/album/2.jpg" class="img-fluid">
+                        <img src="" class="img-fluid">
                     </div>
                     <div class="col-lg-10 col-md-10 col-sm-6 col-xs-12">
                         <div class="album-details">
-                        <h4>ALBUM</h4>
-                        <h1>Bohemian Rhapsody (The Original Soundtrack)</h1>
-                        <div class="publish">
-                            <img src="assets/images/artist/1.jpg" width="24px" height="24px">
-                            <a href="#">Queen</a> <span class="year">2018</span><span class="total-songs">22</span>, <span>1 hr 19 min </span>
-                        </div>
+                            <!-- <h4>ALBUM</h4>
+                            <h1>Bohemian Rhapsody (The Original Soundtrack)</h1>
+                            <div class="publish">
+                                <img src="assets/images/artist/1.jpg" width="24px" height="24px">
+                                <a href="#">Queen</a> <span class="year">2018</span><span class="total-songs">22</span>, <span>1 hr 19 min </span>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -93,92 +93,20 @@
                     <button class="btn-heart bd-highlight" type="button" role="switch" aria-checked="false" aria-label="Save to Your Library" title="Save to Your Library"><svg role="img" height="32" width="32" viewBox="0 0 32 32" class="Svg-ulyrgf-0 ghlXvf"><path d="M27.672 5.573a7.904 7.904 0 00-10.697-.489c-.004.003-.425.35-.975.35-.564 0-.965-.341-.979-.354a7.904 7.904 0 00-10.693.493A7.896 7.896 0 002 11.192c0 2.123.827 4.118 2.301 5.59l9.266 10.848a3.196 3.196 0 004.866 0l9.239-10.819A7.892 7.892 0 0030 11.192a7.896 7.896 0 00-2.328-5.619zm-.734 10.56l-9.266 10.848c-.837.979-2.508.979-3.346 0L5.035 16.104A6.9 6.9 0 013 11.192 6.9 6.9 0 015.035 6.28a6.935 6.935 0 014.913-2.048 6.89 6.89 0 014.419 1.605A2.58 2.58 0 0016 6.434c.914 0 1.555-.53 1.619-.585a6.908 6.908 0 019.346.431C28.277 7.593 29 9.337 29 11.192s-.723 3.6-2.062 4.941z"></path></svg></button>
                     <button class="btn-dot bd-highlight"type="button" aria-haspopup="menu" aria-label="More"  title="More"><svg role="img" height="32" width="32" viewBox="0 0 32 32" class="Svg-ulyrgf-0 ghlXvf"><path d="M5.998 13.999A2 2 0 105.999 18a2 2 0 00-.001-4zm10.001 0A2 2 0 1016 18a2 2 0 000-4zm10.001 0A2 2 0 1026.001 18 2 2 0 0026 14z"></path></svg></button>
                 </div>
-                <table class="w-100">
+                <table id="album-table" class="w-100">
                     <tr>
                         <th>#</th>
                         <th>Title</th>
                         <th><i class="far fa-clock"></i></th>
                     </tr>
-                    <tr>
+                    <!-- <tr>
                         <td>1</td>
                         <td>
                             <div class="song-title">20th Century Fox Fanfare</div>
                             <div class="album-name">Queen</div>
                         </td>
                         <td>0:25</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>
-                            <div class="song-title">20th Century Fox Fanfare</div>
-                            <div class="album-name">Queen</div>
-                        </td>
-                        <td>0:25</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>
-                            <div class="song-title">20th Century Fox Fanfare</div>
-                            <div class="album-name">Queen</div>
-                        </td>
-                        <td>0:25</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>
-                            <div class="song-title">20th Century Fox Fanfare</div>
-                            <div class="album-name">Queen</div>
-                        </td>
-                        <td>0:25</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>
-                            <div class="song-title">20th Century Fox Fanfare</div>
-                            <div class="album-name">Queen</div>
-                        </td>
-                        <td>0:25</td>
-                    </tr>
-                    <tr>
-                        <td>6</td>
-                        <td>
-                            <div class="song-title">20th Century Fox Fanfare</div>
-                            <div class="album-name">Queen</div>
-                        </td>
-                        <td>0:25</td>
-                    </tr>
-                    <tr>
-                        <td>7</td>
-                        <td>
-                            <div class="song-title">20th Century Fox Fanfare</div>
-                            <div class="album-name">Queen</div>
-                        </td>
-                        <td>0:25</td>
-                    </tr>
-                    <tr>
-                        <td>8</td>
-                        <td>
-                            <div class="song-title">20th Century Fox Fanfare</div>
-                            <div class="album-name">Queen</div>
-                        </td>
-                        <td>0:25</td>
-                    </tr>
-                    <tr>
-                        <td>9</td>
-                        <td>
-                            <div class="song-title">20th Century Fox Fanfare</div>
-                            <div class="album-name">Queen</div>
-                        </td>
-                        <td>0:25</td>
-                    </tr>
-                    <tr>
-                        <td>10</td>
-                        <td>
-                            <div class="song-title">20th Century Fox Fanfare</div>
-                            <div class="album-name">Queen</div>
-                        </td>
-                        <td>0:25</td>
-                    </tr>
+                    </tr> -->
                 </table>
             </section>
 
