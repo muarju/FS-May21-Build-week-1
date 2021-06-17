@@ -1,5 +1,5 @@
 import { spotifyDataLarge } from './data/spotifyDataLarge.js'
-import { displayCards, filterData,songLength } from './home.js';
+import { displayCards, filterData,songLength } from './function.js';
 
 //! ------------------------------------< Good Morning Section >-------------------------------------------
 const cardGoodMorning = spotify => `<div class="col">

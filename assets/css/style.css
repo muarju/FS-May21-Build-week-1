@@ -147,6 +147,29 @@ color: white;}
   h6{
       font-size: 6px !important;
   }
+
+  #nav-top {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+  }
+  #nav-top .arrows > * {
+    fill: aliceblue;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 0px 1px;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+  #nav-top #login {
+    color: white;
+    background-color: #00000091;
+    border-radius: 28px;
+    overflow: hidden;
+  }
+  #nav-top #login img {
+    height: 28px;
+    border-radius: 50%;
+  }
   .sportifyfooter {
     position: fixed;
     bottom: 0;
@@ -559,11 +582,11 @@ button svg{
   }
 
 .player-song-title{
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 500;
   color: white;
-  line-height: 10px;
-  padding-top: 15px;
+  line-height: 5px;
+  padding-top: 10px;
 }
 .player-album-name{
   font-size: 13px;
@@ -574,12 +597,6 @@ svg{
   fill: #fff;
 }
 
-@media (min-width: 768px){
-  .player-song-title{
-    line-height: 18px;
-
-  }
-}
 
 
 /** CSS code for Artist page **/

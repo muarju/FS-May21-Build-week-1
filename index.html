@@ -11,16 +11,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
 
-    <link rel="stylesheet" href="./css/home.css">
-
-    <!-- <script async src="login_credentals.js"></script> -->
-    <script type="module" async src="./js/spotifyData.js"></script>
-    <script type="module" async src="./js/home.js"></script>
-    <script type="module" async src="./js/showRunner.js"></script>
     <!-- Custome CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+     <!-- Required Jasvascript -->
+    <script type="module" async src="./js/showRunner.js"></script>
   </head>
   <body>
    <div class="container-fluid">
@@ -55,19 +50,16 @@
                 <button data-testid="top-bar-back-button" aria-hidden="true" aria-label="Go back" disabled="" class="_8780d098bf4fa4b72c62f7f4c869e817-scss fcae410939337be1f28cb50fe3d0dcb3-scss" title="Go back"><svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" class="Svg-sc-1usfroi-0 kcaoHR _6fe5d5efc9b4a07d5c424071ac7cdacb-scss"><polyline points="16 4 7 12 16 20" fill="none" stroke="#dddddd"></polyline></svg></button>
                 <button data-testid="top-bar-forward-button" aria-hidden="true" aria-label="Go forward" disabled="" class="_8780d098bf4fa4b72c62f7f4c869e817-scss e228f25654282e1c84018873fefaa148-scss" title="Go forward"><svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" class="Svg-sc-1usfroi-0 kcaoHR _6fe5d5efc9b4a07d5c424071ac7cdacb-scss"><polyline points="8 4 17 12 8 20" fill="none" stroke="#dddddd"></polyline></svg></button>
               </div>
-              <div id="login">
-                <div class="dropdown rounded login text-white">
-                  <a class="btn dropdown-toggle text-white font-weight-bolder" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <img src="https://i.scdn.co/image/ab67706f0000000218e20d8d2bc7aa007d305e57" alt="...">
-                    Dropdown link
+              <div id="login dropdown">
+                  <a class="nav-link dropdown-toggle rounded login text-white" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="https://i.scdn.co/image/ab67706f0000000218e20d8d2bc7aa007d305e57" height="30px" alt="...">
+                      Arju
                   </a>
-                
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Profile</a>
+                    <a class="dropdown-item" href="#">Settings</a>
+                    <a class="dropdown-item" href="#">Logout</a>
                   </div>
-                </div>
               </div>
             </nav>
            
@@ -82,13 +74,12 @@
               <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 row-cols-lg-6 my-3 recently-played-cards" >
               </div>
             </section>
-
+           
              <section id="show-to-try">
               <h3>Shows to try</h3>
               <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 row-cols-lg-6 my-3 show-to-try" >
               </div>
             </section>
-
            </main>
        </div>
        <section class="sportifyfooter spotify-black" style="margin-bottom: 0px;">
@@ -133,10 +124,8 @@
         </div>
     </section>
    </div>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
-    
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
   </body>
 </html>
